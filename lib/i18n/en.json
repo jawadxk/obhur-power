@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "siteName": "Obhur Power Services",
+    "title": "Obhur Power Services — Power Solutions You Can Rely On",
+    "description": "Power equipment, electrical solutions and technical services."
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "catalogs": "Catalogs",
+    "about": "About us",
+    "contact": "Contact us",
+    "toggleTheme": "Toggle theme",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Switch language"
+  },
+  "hero": {
+    "eyebrow": "Power & electrical solutions",
+    "title": "Reliable power for every project",
+    "subtitle": "We supply quality power equipment and electrical solutions, backed by expert technical support from consultation to after-sales service.",
+    "primaryCta": "Explore products",
+    "secondaryCta": "Get in touch",
+    "highlights": [
+      "Quality certified equipment",
+      "Fast, reliable delivery",
+      "Dedicated after-sales support"
+    ],
+    "visualTitle": "Powering your operations",
+    "visualItems": ["Generators", "Electrical panels", "Maintenance"]
+  },
+  "products": {
+    "eyebrow": "What we offer",
+    "title": "Our product range",
+    "subtitle": "A selection of our main product categories. Full details and specifications are available in our catalogs.",
+    "viewAll": "View all products",
+    "items": [
+      {
+        "title": "Generators",
+        "description": "Diesel and gas generator sets for continuous and standby power."
+      },
+      {
+        "title": "Electrical Panels",
+        "description": "Distribution and control panels built to project specifications."
+      },
+      {
+        "title": "Cables & Accessories",
+        "description": "Power cables, connectors and installation accessories."
+      },
+      {
+        "title": "Maintenance & Services",
+        "description": "Installation, inspection and preventive maintenance by qualified technicians."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Why choose us",
+    "title": "Built on quality and trust",
+    "items": [
+      {
+        "title": "Certified quality",
+        "description": "Every product meets recognized industry standards."
+      },
+      {
+        "title": "On-time delivery",
+        "description": "Efficient logistics so your projects stay on schedule."
+      },
+      {
+        "title": "Expert support",
+        "description": "Our technical team is with you before, during and after the sale."
+      }
+    ]
+  },
+  "catalogsCta": {
+    "title": "Browse our catalogs",
+    "subtitle": "Download detailed product catalogs with full specifications.",
+    "cta": "View catalogs"
+  },
+  "contactCta": {
+    "title": "Have a project in mind?",
+    "subtitle": "Tell us what you need and our team will get back to you shortly.",
+    "cta": "Contact us"
+  },
+  "footer": {
+    "tagline": "Power equipment and electrical solutions you can rely on.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "contactInfo": {
+    "phone": "+966 00 000 0000",
+    "email": "info@obhur-power.com",
+    "address": "Jeddah, Saudi Arabia"
+  },
+  "pages": {
+    "products": {
+      "title": "Products",
+      "subtitle": "Explore our full range of power equipment and electrical solutions."
+    },
+    "catalogs": {
+      "title": "Catalogs",
+      "subtitle": "Download our product catalogs for detailed specifications.",
+      "items": [
+        "Generators Catalog",
+        "Electrical Panels Catalog",
+        "Cables & Accessories Catalog"
+      ],
+      "download": "Download PDF"
+    },
+    "about": {
+      "title": "About us",
+      "subtitle": "Learn more about Obhur Power Services.",
+      "body": [
+        "Obhur Power Services provides power equipment and electrical solutions for commercial, industrial and residential projects.",
+        "Our team combines technical expertise with a commitment to quality, helping clients choose the right equipment and keeping it running reliably for years to come."
+      ]
+    },
+    "contact": {
+      "title": "Contact us",
+      "subtitle": "We'd love to hear about your project.",
+      "form": {
+        "name": "Full name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "submit": "Send message",
+        "note": "The contact form will be connected soon."
+      }
+    }
+  },
+  "common": {
+    "comingSoon": "Coming soon"
+  }
+}
