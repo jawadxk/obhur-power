@@ -2,7 +2,8 @@ import Image from "next/image";
 
 /**
  * OPS brand logo.
- * - "header": the OPS emblem + "Obhur Power Services" wordmark side by side.
+ * - "header": the OPS emblem, plus the "Obhur Power Services" wordmark from tablet width up.
+ *   On phones only the emblem shows, so it doesn't collide with the header buttons.
  * - "footer": the full stacked logo (emblem above wordmark).
  * Each variant ships a color version (light mode) and a white version (dark mode);
  * Tailwind's `dark:` variant swaps them based on the class next-themes sets on <html>.
@@ -26,11 +27,11 @@ export function Logo({
 
   return (
     <span dir="ltr" className="flex items-center gap-2.5">
-      <Image src="/brand/logo-mark.svg" alt={alt} width={75} height={40} priority className="h-9 w-auto dark:hidden" />
-      <Image src="/brand/logo-mark-white.svg" alt={alt} width={75} height={40} priority className="hidden h-9 w-auto dark:block" />
-      {/* The wordmark repeats the name the emblem's alt already gives, so it is decorative. */}
-      <Image src="/brand/logo-text.svg" alt="" width={204} height={20} priority className="h-3.5 w-auto sm:h-4 dark:hidden" />
-      <Image src="/brand/logo-text-white.svg" alt="" width={204} height={20} priority className="hidden h-3.5 w-auto sm:h-4 dark:block" />
+      <Image src="/brand/logo-mark.svg" alt={alt} width={75} height={40} priority className="h-9 w-auto shrink-0 dark:hidden" />
+      <Image src="/brand/logo-mark-white.svg" alt={alt} width={75} height={40} priority className="hidden h-9 w-auto shrink-0 dark:block" />
+      {/* The wordmark repeats the name the emblem's alt already gives, so it is decorative. Hidden on phones. */}
+      <Image src="/brand/logo-text.svg" alt="" width={204} height={20} priority className="hidden h-4 w-auto sm:block sm:dark:hidden" />
+      <Image src="/brand/logo-text-white.svg" alt="" width={204} height={20} priority className="hidden h-4 w-auto sm:dark:block" />
     </span>
   );
 }
