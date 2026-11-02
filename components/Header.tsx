@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Zap } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { DesktopNav, MobileNav, type NavItem } from "./Navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
+import { Logo } from "./Logo";
 
 export function getNavItems(lang: Locale, dict: Dictionary): NavItem[] {
   return [
@@ -23,12 +23,7 @@ export function Header({ lang, dict }: { lang: Locale; dict: Dictionary }) {
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link href={`/${lang}`} className="flex items-center gap-2.5">
-          <span className="grid size-9 place-items-center rounded-lg bg-brand text-accent">
-            <Zap className="size-5" />
-          </span>
-          <span className="text-sm font-semibold leading-tight sm:text-base">
-            {dict.meta.siteName}
-          </span>
+          <Logo alt={dict.meta.siteName} />
         </Link>
 
         <DesktopNav items={items} />

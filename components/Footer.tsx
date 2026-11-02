@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { Mail, MapPin, Phone, Zap } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import type { Locale } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { getNavItems } from "./Header";
+import { Logo } from "./Logo";
 
 export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
   const items = getNavItems(lang, dict);
@@ -12,10 +13,7 @@ export function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2.5">
-            <span className="grid size-9 place-items-center rounded-lg bg-brand text-accent">
-              <Zap className="size-5" />
-            </span>
-            <span className="font-semibold">{dict.meta.siteName}</span>
+            <Logo alt={dict.meta.siteName} variant="footer" />
           </div>
           <p className="mt-4 max-w-xs text-sm text-muted">{dict.footer.tagline}</p>
         </div>
